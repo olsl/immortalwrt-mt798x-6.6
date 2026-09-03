@@ -18,6 +18,8 @@
 #ifndef MTK_ETH_DBG_H
 #define MTK_ETH_DBG_H
 
+#include "mtk_eth_reset.h"
+
 /* Debug Purpose Register */
 #define MTK_PSE_FQFC_CFG		0x100
 #define MTK_FE_CDM1_FSM			0x220
