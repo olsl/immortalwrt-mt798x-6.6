@@ -723,7 +723,7 @@ typedef struct os_cookie	*POS_COOKIE;
 #define MTWF_PRINT	printk
 #else
 #define  mt_printk(fmt, ...) printk(KERN_CONT fmt, ##__VA_ARGS__)
-#define MTWF_PRINT	pr_cont
+#define MTWF_PRINT	printk
 #endif
 #ifdef DBG_ENHANCE
 /* Mapping Wi-Fi driver log to syslog level */
