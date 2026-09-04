@@ -1385,7 +1385,7 @@ static VOID chip_show_bcn_info(struct hdev_ctrl *ctrl, UCHAR bandidx)
 	mac_val = (~mac_val & WF_PLE_TOP_TO_N9_INT_TOGGLE_MASK) | (mac_val & ~WF_PLE_TOP_TO_N9_INT_TOGGLE_MASK);
 	mac_val &= WF_PLE_TOP_TO_N9_INT_TOGGLE_MASK;
 	mac_val |= (bandidx << DBG_PLE_INT_BAND_NUM_SHIFT);
-	mac_val |= (ENUM_AHDBUG_L1_TX << DBG_PLE_INT_MODULE_SHIFT);
+	mac_val |= (1 /* ENUM_AHDBUG_L1_TX */ << DBG_PLE_INT_MODULE_SHIFT);
 	RTMP_IO_WRITE32(pAd->hdev_ctrl, (WF_PLE_TOP_TO_N9_INT_ADDR), mac_val);
 	mdelay(200);
 	MTWF_PRINT("\n");
