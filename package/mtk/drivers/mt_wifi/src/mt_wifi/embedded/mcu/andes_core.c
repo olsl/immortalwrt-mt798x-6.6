@@ -18,6 +18,7 @@
 	andes_core.c
 */
 #include "rt_config.h"
+#include "mac/mac_mt/fmac/mt_fmac.h"
 
 #ifdef DBG_STARVATION
 static void andes_starv_timeout_handle(struct starv_dbg *starv, struct starv_log_entry *entry)
