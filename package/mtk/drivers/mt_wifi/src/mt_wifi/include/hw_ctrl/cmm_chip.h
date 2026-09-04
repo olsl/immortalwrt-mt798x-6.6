@@ -760,6 +760,10 @@ struct mcs_nss_caps {
 	UINT8 ext_bw_nss;
 };
 
+
+/* max_path helper (missing in 6.6 fork) */
+#define GET_MAX_PATH(cap, band, is_rx) ((cap)->mcs_nss.max_path[band][is_rx])
+
 #define WMM_DETECT_METHOD1 1
 #define WMM_DETECT_METHOD2 2
 struct qos_caps {
