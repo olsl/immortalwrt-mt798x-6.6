@@ -26,6 +26,7 @@
 
 
 #include "rt_config.h"
+#include "mac/mac_mt/fmac/mt_fmac.h"
 
 #ifdef RLM_CAL_CACHE_SUPPORT
 #include "phy/rlm_cal_cache.h"
