@@ -5537,7 +5537,7 @@ INT32 SetATEConTxETxBfGdProc(
 	TESTMODE_SET_PARAM(pAd, control_band_idx, channel, Channel);
 	TESTMODE_SET_PARAM(pAd, control_band_idx, channel_2nd, Channel2);
 #if !defined(CONFIG_AP_SUPPORT) && !defined(DBDC_MODE)
-	/* Only to prevent build error: unused variable ¡¥BandIdx¡¦*/
+	/* Only to prevent build error: unused variable 隆楼BandIdx隆娄*/
 	MTWF_DBG(pAd, DBG_CAT_BF, DBG_SUBCAT_ALL, DBG_LVL_DEBUG,
 		"control_band_idx=%d\n", control_band_idx);
 
@@ -6367,7 +6367,7 @@ INT32 SetATE(
 				} else
 					Ret = chip_dbg->check_txv(pAd->hdev_ctrl, "Rate", entry->phy_param.rate, control_band_idx);
 				if (phy_mode < MODE_HTMIX)
-					Ret = chip_dbg->check_txv(pAd->hdev_ctrl, "NSTS", 0);
+					Ret = chip_dbg->check_txv(pAd->hdev_ctrl, "NSTS", 0, control_band_idx);
 				else if (phy_mode < MODE_VHT)
 					Ret = chip_dbg->check_txv(pAd->hdev_ctrl, "NSTS", (entry->phy_param.rate >> 3), control_band_idx);
 				else
