@@ -972,7 +972,7 @@ retransmit:
 
 					if (ops->hw_auto_debug_trigger) {
 						for (BandIdx = 0; BandIdx < DBDC_BAND_NUM; BandIdx++)
-							ops->hw_auto_debug_trigger(ad, BandIdx, ENUM_AHDBUG_L1_WFDMA, 0);
+							ops->hw_auto_debug_trigger(ad, BandIdx, 5 /* ENUM_AHDBUG_L1_WFDMA */, 0);
 					}
 
 					MTWF_DBG(ad, DBG_CAT_FW, DBG_SUBCAT_ALL, DBG_LVL_WARN,
