@@ -5671,8 +5671,10 @@ VOID os_module_init(VOID)
 		if (strlen(dbg_level) != 0)
 			Set_Debug_Proc(NULL, dbg_level);
 
+#ifdef DBG_ENHANCE
 		if (strlen(dbg_option) != 0)
 			Set_DebugOption_Proc(NULL, dbg_option);
+#endif
 	}
 
 /* Add out-of-memory notifier */
