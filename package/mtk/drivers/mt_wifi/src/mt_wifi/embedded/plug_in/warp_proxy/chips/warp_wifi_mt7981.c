@@ -14,6 +14,7 @@
 	warp_wifi_mt7981.c
 */
 #include "warp_wifi_mt7981.h"
+#include "mac/mac_mt/fmac/mt_fmac.h"
 #include "../warp_proxy.h"
 #include <warp.h>
 
