@@ -2994,7 +2994,7 @@ VOID ApCliIfMonitor(RTMP_ADAPTER *pAd)
 								UCHAR band_idx = 0;
 								band_idx = HcGetBandByWdev(pMacEntry->wdev);
 								MTWF_PRINT("%s : band_idx=%u Trigger TX AUTO DBG!\n", __func__, band_idx);
-								ops->hw_auto_debug_trigger(pAd, band_idx, ENUM_AHDBUG_L1_TX, 0);
+								ops->hw_auto_debug_trigger(pAd, band_idx, 1 /* ENUM_AHDBUG_L1_TX */, 0);
 							}
 						}
 #ifdef RACTRL_FW_OFFLOAD_SUPPORT
