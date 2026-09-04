@@ -25,6 +25,7 @@
 
 
 #include "rt_config.h"
+#include "mac/mac_mt/fmac/mt_fmac.h"
 #ifdef TXRX_STAT_SUPPORT
 #include "hdev/hdev_basic.h"
 #endif
