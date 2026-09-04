@@ -23,6 +23,7 @@
 */
 
 #include "rt_config.h"
+#include "mac/mac_mt/fmac/mt_fmac.h"
 #if (defined(TR181_SUPPORT) || defined(DATA_TXPWR_CTRL))
 #include "hdev/hdev_basic.h"
 #endif /*TR181_SUPPORT*/
