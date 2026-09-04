@@ -27,6 +27,10 @@
 
 #include "rt_config.h"
 #include "mac/mac_mt/fmac/mt_fmac.h"
+#ifdef MGMT_TXPWR_CTRL
+/* local decl: ensure visible regardless of include order (fork fix) */
+INT wtbl_update_pwr_offset(struct _RTMP_ADAPTER *pAd, struct wifi_dev *wdev);
+#endif
 
 #ifdef RLM_CAL_CACHE_SUPPORT
 #include "phy/rlm_cal_cache.h"
