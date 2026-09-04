@@ -1,4 +1,5 @@
 #include "rt_config.h"
+#include "mac/mac_mt/fmac/mt_fmac.h"
 #include "hw_ctrl.h"
 
 /* For wifi and md coex in colgin project*/
