@@ -26,6 +26,7 @@
 */
 
 #include "rt_config.h"
+#include "mac/mac_mt/fmac/mt_fmac.h"
 
 NET_DEV_STATS *RT28xx_get_ether_stats(PNET_DEV net_dev);
 
