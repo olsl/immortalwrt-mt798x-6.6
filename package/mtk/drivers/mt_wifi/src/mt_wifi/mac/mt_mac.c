@@ -16,6 +16,7 @@
 */
 
 #include "rt_config.h"
+#include "mac/mac_mt/fmac/mt_fmac.h"
 
 static const UCHAR wmm_swq_2_hw_ac_queue[18] = {
 	Q_IDX_AC0, /* QID_AC_BK */
