@@ -12,6 +12,7 @@
 */
 
 #include "rt_config.h"
+#include "mac/mac_mt/fmac/mt_fmac.h"
 #include "chip/mt7986_cr.h"
 #include "hdev/hdev.h"
 
